@@ -35,10 +35,10 @@ export function EraSection({ era, index }: EraSectionProps) {
   // Map visuals based on era type
   const VisualComponent = VisualComponents[era.visualType] || PrimitiveModel;
 
-  // Animations driven by scroll progress
+  // Animations driven by scroll progress - optimized with fewer transforms
   const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
   const scale = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.8, 1, 1, 0.8]);
-  const yText = useTransform(scrollYProgress, [0, 1], [100, -100]); // Gentle parallax for text
+  const yText = useTransform(scrollYProgress, [0, 1], [50, -50]); // Reduced parallax distance
 
   return (
     <div 

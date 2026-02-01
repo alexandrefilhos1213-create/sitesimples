@@ -15,9 +15,13 @@ export async function registerRoutes(
 
   app.get(api.eras.get.path, async (req, res) => {
     const id = Number(req.params.id);
+    if (isNaN(id)) {
+      return res.status(400).json({ message: "ID da era inválido" });
+    }
+    
     const era = await storage.getEra(id);
     if (!era) {
-      return res.status(404).json({ message: "Era not found" });
+      return res.status(404).json({ message: "Era não encontrada" });
     }
     res.json(era);
   });
