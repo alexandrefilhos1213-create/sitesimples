@@ -1,0 +1,196 @@
+Perfeito — você está 100% certo 👍
+IA não interpreta intenção, ela responde a especificações técnicas explícitas.
+Abaixo está um prompt reescrito no nível “engenharia de prompt”, pensado exclusivamente para outra IA (site builder / web AI / no-code / AI frontend).
+Está mais longo, mais técnico, mais prescritivo, com menos ambiguidade possível.
+
+Copie exatamente como está.
+
+🔴 PROMPT TÉCNICO EXTREMAMENTE DETALHADO (PARA IA)
+
+Crie uma aplicação web single-page (SPA) com foco em scroll-driven storytelling, cujo objetivo é apresentar a evolução histórica dos computadores de forma visual, narrativa e progressiva, utilizando seções de tela cheia (full-viewport sections) controladas exclusivamente pelo scroll vertical do usuário.
+
+1. ARQUITETURA GERAL
+
+Tipo de aplicação: Single Page Application (SPA)
+
+Navegação: Scroll vertical contínuo
+
+Estrutura: Seções sequenciais de 100vh
+
+Cada seção representa uma era histórica distinta
+
+Não utilizar navegação tradicional baseada em múltiplas páginas
+
+Não utilizar carrosséis, abas ou sliders manuais
+
+2. CONTROLE DO SCROLL (SCROLL-DRIVEN INTERACTIONS)
+
+O scroll do mouse não deve apenas mover o documento, mas controlar diretamente estados visuais e narrativos.
+
+Implementar:
+
+Scroll hijacking controlado
+
+Scroll progress mapping (mapeamento percentual do scroll → estado visual)
+
+Cada seção deve:
+
+Ser pinada (pinned section) durante parte da rolagem
+
+Liberar a próxima seção somente após a conclusão da transição visual atual
+
+Comportamento esperado:
+
+Scroll 0–20% → Introdução da era
+
+Scroll 20–60% → Modelo visual em destaque
+
+Scroll 60–100% → Transição para próxima era
+
+3. SISTEMA DE TRANSIÇÃO ENTRE ERAS
+
+As transições devem ser:
+
+Interpoladas (position, scale, opacity)
+
+Baseadas em easing functions suaves
+
+Proibir:
+
+Cortes abruptos
+
+Mudanças instantâneas de conteúdo
+
+Todo novo conteúdo deve:
+
+Entrar gradualmente (fade-in + transform)
+
+Substituir o anterior por cross-fade ou morph visual
+
+4. MODELOS VISUAIS / REPRESENTAÇÃO GRÁFICA
+
+Cada seção deve conter apenas um elemento visual principal, podendo ser:
+
+Modelo 3D renderizado em tempo real
+
+Ilustração técnica de alta fidelidade
+
+Representação tridimensional estática com animação leve
+
+Regras obrigatórias:
+
+Um modelo por era
+
+Sem interações de clique
+
+Sem desmontagem ou abertura de peças
+
+Permitidas apenas animações passivas:
+
+Rotação lenta em eixo Y
+
+Pequenos deslocamentos no eixo Z (zoom)
+
+Oscilações sutis para dar sensação de profundidade
+
+5. COMPOSIÇÃO DE CENA (VISUAL LAYOUT)
+
+Layout dividido em duas colunas lógicas:
+
+Coluna de conteúdo textual
+
+Coluna de visual principal
+
+O visual deve permanecer fixo enquanto o texto evolui
+
+O texto deve:
+
+Mudar sincronizado ao estado do scroll
+
+Nunca ultrapassar 3 a 4 linhas por bloco
+
+Tipografia:
+
+Sans-serif moderna
+
+Hierarquia clara (heading, subheading, body)
+
+6. LINHA DO TEMPO HISTÓRICA (CONTEÚDO)
+
+A progressão deve seguir ordem cronológica explícita, por exemplo:
+
+Dispositivos primitivos de cálculo
+
+Máquinas eletromecânicas
+
+Primeiros computadores eletrônicos
+
+Computadores institucionais de grande porte
+
+Computadores pessoais
+
+Dispositivos modernos e compactos
+
+Cada etapa deve:
+
+Ter seu próprio estado visual
+
+Introduzir o modelo antes do texto explicativo
+
+Comunicar evolução de:
+
+Escala física
+
+Capacidade de processamento
+
+Finalidade de uso
+
+7. EXPERIÊNCIA DO USUÁRIO (UX)
+
+Interface minimalista
+
+Fundo neutro
+
+Alto contraste
+
+Nenhum elemento distrativo
+
+Sem pop-ups
+
+Sem menus flutuantes chamativos
+
+O foco deve ser exclusivamente:
+
+Narrativa
+
+Conteúdo
+
+Progressão visual
+
+8. PERFORMANCE E FLUIDEZ
+
+Priorizar:
+
+Carregamento progressivo de recursos
+
+Lazy loading de modelos visuais
+
+As animações devem manter:
+
+Alta taxa de quadros
+
+Sensação de fluidez contínua
+
+O scroll deve responder de forma previsível e consistente
+
+9. OBJETIVO FINAL DO SISTEMA
+
+O resultado final deve se comportar como um documentário interativo controlado por scroll, onde:
+
+O usuário controla o ritmo
+
+A história avança visualmente
+
+O conteúdo é apresentado de forma elegante, técnica e educativa
+
+A experiência deve transmitir progressão temporal, evolução tecnológica e clareza conceitual, sem depender de interações manuais além da rolagem vertical.

@@ -1,0 +1,209 @@
+Defina e implemente o sistema visual completo (UI + visual language) para uma aplicação web de scroll-driven storytelling, com foco em narrativa histórica e apresentação visual sofisticada, priorizando clareza, minimalismo e hierarquia visual forte.
+
+1. PRINCÍPIOS VISUAIS GERAIS
+
+Estilo visual: Minimalista, editorial e institucional
+
+Evitar:
+
+Gradientes chamativos
+
+Cores saturadas
+
+Elementos decorativos desnecessários
+
+Priorizar:
+
+Espaço em branco (white space)
+
+Leitura confortável
+
+Foco no conteúdo e nos modelos visuais
+
+2. SISTEMA DE CORES
+🎨 Paleta base
+
+Utilizar uma paleta neutra e técnica, baseada em:
+
+Modo Claro (Light Mode)
+
+Background primário: #FFFFFF ou #F9FAFB
+
+Texto primário: #111827
+
+Texto secundário: #4B5563
+
+Elementos de destaque sutis: #1F2937
+
+Divisores e linhas: #E5E7EB
+
+Modo Noturno (Dark Mode)
+
+Background primário: #0B0F14 ou #111827
+
+Texto primário: #F9FAFB
+
+Texto secundário: #9CA3AF
+
+Elementos de destaque sutis: #E5E7EB
+
+Divisores e linhas: #1F2937
+
+O contraste deve atender critérios de acessibilidade (WCAG AA ou superior).
+
+Não utilizar cores fortes como vermelho, verde ou azul saturado para destaque principal.
+
+3. TIPOGRAFIA
+
+Família tipográfica: Sans-serif moderna e neutra
+
+Pesos permitidos:
+
+Regular
+
+Medium
+
+Semibold
+
+Hierarquia:
+
+Heading principal (era histórica)
+
+Subheading (contexto)
+
+Body text (explicação curta)
+
+Regras:
+
+Máximo de 3–4 linhas por bloco textual
+
+Line-height confortável
+
+Texto sempre legível sobre fundos claros ou escuros
+
+Não utilizar sombras no texto
+
+4. LAYOUT E GRID
+
+Utilizar grid responsivo de 12 colunas
+
+Layout principal dividido em:
+
+Área textual
+
+Área visual
+
+O conteúdo deve:
+
+Permanecer centralizado verticalmente
+
+Ter margens generosas
+
+O visual principal nunca deve competir com o texto
+
+5. APRESENTAÇÃO DOS ELEMENTOS VISUAIS
+
+O modelo visual (3D ou ilustração):
+
+Deve ocupar o maior peso visual da seção
+
+Estar centralizado em seu container
+
+Ter fundo limpo e sem ruído
+
+Animações permitidas:
+
+Fade-in
+
+Translate leve
+
+Rotação lenta e contínua
+
+Proibir:
+
+Animações bruscas
+
+Efeitos chamativos
+
+Overlays decorativos
+
+6. BOTÃO DE MODO CLARO / MODO NOTURNO
+Comportamento:
+
+Um toggle switch discreto deve estar presente na interface.
+
+Posição recomendada:
+
+Canto superior direito
+
+Sempre visível, porém não chamativo
+
+O toggle deve:
+
+Alternar entre Light Mode e Dark Mode
+
+Alterar todas as cores do sistema visual
+
+Persistir a escolha do usuário (ex: local storage ou estado global)
+
+Visual do botão:
+
+Ícone simples e universal:
+
+Sol para modo claro
+
+Lua para modo noturno
+
+Sem texto explicativo
+
+Animação suave de transição entre modos
+
+Não interromper o scroll ou a narrativa
+
+7. TRANSIÇÃO ENTRE MODOS (LIGHT ↔ DARK)
+
+A troca de modo deve:
+
+Ser animada suavemente (fade ou color transition)
+
+Não causar reflow ou layout shift
+
+O conteúdo visual (modelos, imagens) deve:
+
+Ajustar contraste automaticamente
+
+Permanecer legível em ambos os modos
+
+8. CONSISTÊNCIA VISUAL
+
+O sistema visual deve ser global e consistente em todas as seções.
+
+Não alterar:
+
+Tipografia
+
+Paleta
+
+Estilo de layout entre eras
+
+A única mudança perceptível deve ser:
+
+O conteúdo
+
+O modelo visual
+
+A narrativa histórica
+
+9. OBJETIVO VISUAL FINAL
+
+A interface deve transmitir:
+
+Sofisticação técnica
+
+Neutralidade institucional
+
+Sensação de linha do tempo contínua
+
+Clareza educacional
+
+O visual deve funcionar como um suporte silencioso para a narrativa, nunca competindo com o conteúdo histórico ou os elementos visuais principais.
